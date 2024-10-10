@@ -12,10 +12,10 @@ namespace exercicio_de_multiplas_janelas
 {
     public partial class FormCriarProduto : Form
     {
-        public string nomeProduto { get { return this.textBoxNome.Text; } }
-        public string nomeFabricante { get { return this.textBoxFabricante.Text; } }
-        public float precoCompra { get { return (float)this.inputPrecoCompra.Value; } }
-        public float precoVenda { get { return (float)this.inputPrecoVenda.Value; } }
+        public string Nome { get { return this.textBoxNome.Text; } }
+        public string Fabricante { get { return this.textBoxFabricante.Text; } }
+        public decimal PrecoCompra { get { return this.inputPrecoCompra.Value; } }
+        public decimal PrecoVenda { get { return this.inputPrecoVenda.Value; } }
         public FormCriarProduto()
         {
             InitializeComponent();
@@ -26,10 +26,6 @@ namespace exercicio_de_multiplas_janelas
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonOk_Click(object sender, EventArgs e)
         {

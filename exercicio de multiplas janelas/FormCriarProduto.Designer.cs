@@ -58,7 +58,7 @@
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(100, 23);
             textBoxNome.TabIndex = 1;
-            textBoxNome.TextChanged += textBox1_TextChanged;
+           
             // 
             // inputPrecoCompra
             // 
@@ -117,7 +117,7 @@
             textBoxFabricante.Name = "textBoxFabricante";
             textBoxFabricante.Size = new Size(100, 23);
             textBoxFabricante.TabIndex = 1;
-            textBoxFabricante.TextChanged += textBox1_TextChanged;
+            
             // 
             // buttonOk
             // 

@@ -30,7 +30,8 @@
         {
             buttonAdicionar = new Button();
             buttonRemover = new Button();
-            listBox1 = new ListBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // buttonAdicionar
@@ -53,25 +54,26 @@
             buttonRemover.UseVisualStyleBackColor = true;
             buttonRemover.Click += buttonRemover_Click;
             // 
-            // listBox1
+            // dataGridView1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(2, 56);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(1014, 409);
-            listBox1.TabIndex = 2;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(2, 56);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(1001, 458);
+            dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1015, 683);
-            Controls.Add(listBox1);
+            Controls.Add(dataGridView1);
             Controls.Add(buttonRemover);
             Controls.Add(buttonAdicionar);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -79,6 +81,6 @@
 
         private Button buttonAdicionar;
         private Button buttonRemover;
-        private ListBox listBox1;
+        private DataGridView dataGridView1;
     }
 }
